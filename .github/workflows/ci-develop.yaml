@@ -20,3 +20,7 @@ jobs:
 
       - name: Lint CSS Files
         run: npx stylelint "**/*.css"
+
+      - name: Test Build Static Website
+        run:  npx parcel build "./src/index.html" --dist-dir "./dist"
+
